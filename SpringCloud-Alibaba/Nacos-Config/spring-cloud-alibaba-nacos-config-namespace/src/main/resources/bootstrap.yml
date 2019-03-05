@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: hengboy-sca-nacos-config-namespace
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        # 自定义namespace
+        namespace: 52cfe0c1-746c-4f82-b161-a8799af1b1e9
+        # 自定义分组
+        group: hengboy
