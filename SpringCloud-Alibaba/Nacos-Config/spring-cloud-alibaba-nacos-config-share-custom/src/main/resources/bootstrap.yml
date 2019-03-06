@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: hengboy-sca-nacos-config-share-custom
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        ext-config:
+            # 配置公共配置
+          - data-id: hengboy-common.yaml
+            # 自动刷新
+            refresh: true
+            # 配置共享服务配置
+          - data-id: hengboy-service.yaml
+            # 不自动刷新
+            refresh: false
