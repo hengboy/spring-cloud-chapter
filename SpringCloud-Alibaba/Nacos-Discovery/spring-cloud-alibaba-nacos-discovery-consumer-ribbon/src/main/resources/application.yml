@@ -1,0 +1,12 @@
+# service instance name
+spring:
+  application:
+    name: hengboy-sca-nacos-discovery-consumer-ribbon
+  # nacos discovery config
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+#server port by custom
+server:
+  port: 9000
