@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-cloud-gateway-sample
+  cloud:
+    gateway:
+      routes:
+        - id: blog
+          uri: http://blog.yuqiyu.com
+          predicates:
+            #- Path=/api-boot-datasource-switch.html
+            #- Method=POST
+            #- Query=xxx, zzz
+            #- Path=/article/{articleId}
+            - Between=2019-04-29T00:00:00+08:00[Asia/Shanghai], 2020-12-01T00:00:00+08:00[Asia/Shanghai]
+            #- After=2019-04-29T00:00:00+08:00[Asia/Shanghai]
+            #- Before=2019-05-01T00:00:00+08:00[Asia/Shanghai]
+            #- Cookie=hengboy, yuqiyu
+            #- Header=X-Request-Id, \d+
+            #- Host=**.yuqiyu.com
+            #- RemoteAddr=192.168.1.56/24
+server:
+  port: 9090
