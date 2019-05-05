@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: sample-eureka-server
+server:
+  port: 10000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/
+    fetch-registry: false
+    register-with-eureka: false
