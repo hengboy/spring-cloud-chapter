@@ -1,9 +1,12 @@
+# 服务名
 spring:
   application:
     name: sample-eureka-server
+# 端口号
 server:
   port: 10000
 
+# Eureka 配置信息
 eureka:
   client:
     service-url:
